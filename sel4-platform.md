@@ -54,7 +54,7 @@ best system for a particular use case, requiring extensive seL4 experience
 from developers.
 
 The seL4 Core Platform addresses this challenge by constraining the
-system architecture and to one that provides enough features and power
+system architecture to one that provides enough features and power
 for this usage class, enabling a much simpler set of developer-visible
 abstractions.
 
@@ -304,7 +304,7 @@ semaphore).
 Memory regions may be attached to a communication channel.
 It is possible for multiple memory regions to be attached to a communication channel.
 
-Attached memory regions provided a way for the PD utilizing the communication channel to refer to a specific memory location.
+Attached memory regions provide a way for the PD utilizing the communication channel to refer to a specific memory location.
 A **memory reference** is an efficient encoding that identifies a specific offset within an attached memory region.
 
 Normally an attached memory region will be mapped into both protection domains, however it is likely that the memory region will be mapped at different virtual address in each PD.
@@ -396,7 +396,7 @@ PPC arguments are passed by-value (i.e. copied) and are limited to 16 machine wo
 > The PPC payload should be considered as analogous to function arguments in the C language; similar limitations exist in the C ABIs (Application Binary Interfaces) of various platforms.
 
 The seL4 Core Platform provides the server with the (non-forgeable)
-identify of the client PD. The server may use this to associate state with the client (e.g. for long-running operations) and enforce
+identity of the client PD. The server may use this to associate state with the client (e.g. for long-running operations) and enforce
 access control.
 
 **Note**

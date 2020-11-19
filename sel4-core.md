@@ -24,7 +24,7 @@ to build *any* seL4-based system. These include systems built on the
 seL4 Core Platform, but also other classes of systems, such as dynamic
 systems, minimal systems based on directly supporting run-times for
 languages like Rust or Erlang. As such it should not impose policy
-that restricts the design space enabled by se4.
+that restricts the design space enabled by seL4.
 
 This policy freedom applies to both run-time and build-time. 
 
@@ -47,7 +47,7 @@ kernel
 
 #. All the supported boards must support all configurations.
 
-#. The release must include a way test test the functionality and performance of the components.
+#. The release must include a way to test the functionality and performance of the components.
 
 #. All the individual tests and benchmarks must be clearly documented as to their purpose.
 
